@@ -14,6 +14,9 @@ public class Player : MonoBehaviour {
     private bool firstTime = true;
     private float jumpLock;
     private int spacePressed;
+
+    private float timePassed;
+    private float startingYPos;
     private DisplayManager displayManager;
     private AudioManager audioManager;
 
@@ -23,12 +26,14 @@ public class Player : MonoBehaviour {
         rbody = GetComponent<Rigidbody>();
         displayManager = GameObject.FindObjectOfType<DisplayManager>();
         audioManager = GameObject.FindObjectOfType<AudioManager>();
+        startingYPos = transform.position.y;
 
     }
 
     // Update is called once per frame
     void Update () {
-
+        timePassed += Time.deltaTime;
+        Debug.Log("Speed: " + (transform.position.y - startingYPos) / timePassed);
         Jump();
 		
 	}
@@ -38,7 +43,7 @@ public class Player : MonoBehaviour {
         if (Input.GetButtonDown("Jump") && jumpLock <= 0)
         {
             rbody.AddForce(Vector3.up * jumpForce);
-            audioManager.PlaySound();
+            audioManager.PlaySound(false);
             jumpLock = jumpWait;
             spacePressed++;
         }
@@ -70,7 +75,17 @@ public class Player : MonoBehaviour {
             onGround = true;
             if (!firstTime)
             {
-                audioManager.PlaySound();
+                if (rbody.velocity.y < 0.5f)
+                {
+                    audioManager.PlaySound(true);
+                    rbody.velocity = Vector3.zero;
+                }
+                else
+                {
+                    audioManager.PlaySound(false);
+                }
+
+
             }
             firstTime = false;
             CheckObjective();

@@ -5,15 +5,15 @@
             xmlns:xmp="http://ns.adobe.com/xap/1.0/">
          <xmp:CreatorTool>Adobe Audition CS6 (Windows)</xmp:CreatorTool>
          <xmp:CreateDate>2017-03-09T08:44:49-05:00</xmp:CreateDate>
-         <xmp:MetadataDate>2017-03-09T09:38:28-05:00</xmp:MetadataDate>
-         <xmp:ModifyDate>2017-03-09T09:38:28-05:00</xmp:ModifyDate>
+         <xmp:MetadataDate>2017-03-10T08:36:40-05:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2017-03-10T08:36:40-05:00</xmp:ModifyDate>
       </rdf:Description>
       <rdf:Description rdf:about=""
             xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
             xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
             xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#">
-         <xmpMM:InstanceID>xmp.iid:BE2DF745D404E711AEC7B8E08AF86C5A</xmpMM:InstanceID>
-         <xmpMM:DocumentID>xmp.did:BE2DF745D404E711AEC7B8E08AF86C5A</xmpMM:DocumentID>
+         <xmpMM:InstanceID>xmp.iid:B1060A699605E711B9FE99D9F51A08AC</xmpMM:InstanceID>
+         <xmpMM:DocumentID>xmp.did:B1060A699605E711B9FE99D9F51A08AC</xmpMM:DocumentID>
          <xmpMM:OriginalDocumentID>xmp.did:F5FF2091CE04E711AEC7B8E08AF86C5A</xmpMM:OriginalDocumentID>
          <xmpMM:History>
             <rdf:Seq>
@@ -82,15 +82,43 @@
                </rdf:li>
                <rdf:li rdf:parseType="Resource">
                   <stEvt:action>saved</stEvt:action>
-                  <stEvt:instanceID>xmp.iid:4CCE01FFCF04E711AEC7B8E08AF86C5A</stEvt:instanceID>
-                  <stEvt:when>2017-03-09T09:24:50-05:00</stEvt:when>
+                  <stEvt:instanceID>xmp.iid:C5AD7792D904E711AEC7B8E08AF86C5A</stEvt:instanceID>
+                  <stEvt:when>2017-03-09T10:28:16-05:00</stEvt:when>
                   <stEvt:softwareAgent>Adobe Audition CS6 (Windows)</stEvt:softwareAgent>
                   <stEvt:changed>/metadata</stEvt:changed>
                </rdf:li>
                <rdf:li rdf:parseType="Resource">
                   <stEvt:action>saved</stEvt:action>
-                  <stEvt:instanceID>xmp.iid:BC2DF745D404E711AEC7B8E08AF86C5A</stEvt:instanceID>
-                  <stEvt:when>2017-03-09T09:38:28-05:00</stEvt:when>
+                  <stEvt:instanceID>xmp.iid:C6AD7792D904E711AEC7B8E08AF86C5A</stEvt:instanceID>
+                  <stEvt:when>2017-03-09T10:28:16-05:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition CS6 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:A8060A699605E711B9FE99D9F51A08AC</stEvt:instanceID>
+                  <stEvt:when>2017-03-10T08:35:22-05:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition CS6 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:A9060A699605E711B9FE99D9F51A08AC</stEvt:instanceID>
+                  <stEvt:when>2017-03-10T08:35:22-05:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition CS6 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:AA060A699605E711B9FE99D9F51A08AC</stEvt:instanceID>
+                  <stEvt:when>2017-03-10T08:36:16-05:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition CS6 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:AF060A699605E711B9FE99D9F51A08AC</stEvt:instanceID>
+                  <stEvt:when>2017-03-10T08:36:40-05:00</stEvt:when>
                   <stEvt:softwareAgent>Adobe Audition CS6 (Windows)</stEvt:softwareAgent>
                   <stEvt:changed>/metadata</stEvt:changed>
                </rdf:li>
@@ -100,8 +128,8 @@
                </rdf:li>
                <rdf:li rdf:parseType="Resource">
                   <stEvt:action>saved</stEvt:action>
-                  <stEvt:instanceID>xmp.iid:BD2DF745D404E711AEC7B8E08AF86C5A</stEvt:instanceID>
-                  <stEvt:when>2017-03-09T09:38:28-05:00</stEvt:when>
+                  <stEvt:instanceID>xmp.iid:B0060A699605E711B9FE99D9F51A08AC</stEvt:instanceID>
+                  <stEvt:when>2017-03-10T08:36:40-05:00</stEvt:when>
                   <stEvt:softwareAgent>Adobe Audition CS6 (Windows)</stEvt:softwareAgent>
                </rdf:li>
                <rdf:li rdf:parseType="Resource">
@@ -110,16 +138,16 @@
                </rdf:li>
                <rdf:li rdf:parseType="Resource">
                   <stEvt:action>saved</stEvt:action>
-                  <stEvt:instanceID>xmp.iid:BE2DF745D404E711AEC7B8E08AF86C5A</stEvt:instanceID>
-                  <stEvt:when>2017-03-09T09:38:28-05:00</stEvt:when>
+                  <stEvt:instanceID>xmp.iid:B1060A699605E711B9FE99D9F51A08AC</stEvt:instanceID>
+                  <stEvt:when>2017-03-10T08:36:40-05:00</stEvt:when>
                   <stEvt:softwareAgent>Adobe Audition CS6 (Windows)</stEvt:softwareAgent>
                   <stEvt:changed>/</stEvt:changed>
                </rdf:li>
             </rdf:Seq>
          </xmpMM:History>
          <xmpMM:DerivedFrom rdf:parseType="Resource">
-            <stRef:instanceID>xmp.iid:BD2DF745D404E711AEC7B8E08AF86C5A</stRef:instanceID>
-            <stRef:documentID>xmp.did:BD2DF745D404E711AEC7B8E08AF86C5A</stRef:documentID>
+            <stRef:instanceID>xmp.iid:B0060A699605E711B9FE99D9F51A08AC</stRef:instanceID>
+            <stRef:documentID>xmp.did:B0060A699605E711B9FE99D9F51A08AC</stRef:documentID>
             <stRef:originalDocumentID>xmp.did:F5FF2091CE04E711AEC7B8E08AF86C5A</stRef:originalDocumentID>
          </xmpMM:DerivedFrom>
       </rdf:Description>
@@ -129,8 +157,8 @@
       </rdf:Description>
       <rdf:Description rdf:about=""
             xmlns:bext="http://ns.adobe.com/bwf/bext/1.0/">
-         <bext:originationDate>2017-03-09</bext:originationDate>
-         <bext:originationTime>09:24:50</bext:originationTime>
+         <bext:originationDate>2017-03-10</bext:originationDate>
+         <bext:originationTime>08:36:16</bext:originationTime>
          <bext:timeReference>23836</bext:timeReference>
       </rdf:Description>
       <rdf:Description rdf:about=""

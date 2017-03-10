@@ -4,43 +4,74 @@ using System.Collections.Generic;
 
 public class AudioManager : MonoBehaviour
 {
-    float waitBeforeClip;
-    [SerializeField]
-    public bool play = false;
+    //float waitBeforeClip;
+    //[SerializeField]
+    //public bool play = false;
 
-    public List<AudioClip> audioClips;
+    [SerializeField]
+    List<AudioClip> bouncySounds;
+    [SerializeField]
+    List<AudioClip> bounceSounds;
 
     AudioSource AS;
-    private float initialValue;
+    //private float initialValue;
+    private int currClipNumber;
+    private int clipNumber;
 
     // Use this for initialization
     void Awake()
     {
-        initialValue = waitBeforeClip;
+        //initialValue = waitBeforeClip;
         AS = GetComponent<AudioSource>();
     }
 
     void Update()
     {
+        Debug.Log(AS.isPlaying);
         //if (Input.GetKeyDown(KeyCode.Space))
         //{
         //    PlaySound();
         //}
-        waitBeforeClip -= Time.deltaTime;
-        if (waitBeforeClip <= 0f && play)
-        {
-            PlaySound();
-            waitBeforeClip = AS.clip.length;
-        }
+        //waitBeforeClip -= Time.deltaTime;
+        //if (waitBeforeClip <= 0f && play)
+        //{
+        //    PlaySound();
+        //    waitBeforeClip = AS.clip.length;
+        //}
     }
 
-    public void PlaySound()
+    public void PlaySound(bool bounce)
     {
-        int clipNumber = Mathf.RoundToInt(Random.Range(0f, audioClips.Count));
+        if (!bounce)
+        {
+            clipNumber = Mathf.RoundToInt(Random.Range(0f, bouncySounds.Count));
+            while (clipNumber == currClipNumber)
+            {
+                //Debug.Log("Joe");
+                clipNumber = Mathf.RoundToInt(Random.Range(0f, bouncySounds.Count));
+            }
+
+        }
+        else
+        {
+            clipNumber = Mathf.RoundToInt(Random.Range(0f, bounceSounds.Count));
+            while (clipNumber == currClipNumber)
+            {
+                //Debug.Log("Joe");
+                clipNumber = Mathf.RoundToInt(Random.Range(0f, bounceSounds.Count));
+            }
+        }
+
         AS.Stop();
-        AS.clip = audioClips[clipNumber];
+        AS.clip = (bounce) ?  bounceSounds[clipNumber] : bouncySounds[clipNumber];
+
+        currClipNumber = clipNumber;
         AS.Play();
-        play = false;
+        if (!AS.isPlaying)
+        {
+            AS.UnPause();
+        }
+        //play = false;
     }
 
 }
