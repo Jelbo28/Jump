@@ -8,6 +8,8 @@ public class Player : MonoBehaviour {
     float jumpForce;
     [SerializeField]
     float jumpWait;
+    [SerializeField]
+    float colorChangeSpeed;
 
     Rigidbody rbody;
     private bool onGround;
@@ -19,6 +21,7 @@ public class Player : MonoBehaviour {
     private float startingYPos;
     private DisplayManager displayManager;
     private AudioManager audioManager;
+    private HSBColor cubeColor;
 
 
     // Use this for initialization
@@ -33,10 +36,24 @@ public class Player : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         timePassed += Time.deltaTime;
-        Debug.Log("Speed: " + (transform.position.y - startingYPos) / timePassed);
+        //Debug.Log("Speed: " + (transform.position.y - startingYPos) / timePassed);
         Jump();
+        ColorModify();
 		
 	}
+
+    void ColorModify()
+    {
+        cubeColor = new HSBColor (GetComponent<Renderer>().material.color);
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            cubeColor.h += .05f;
+           // Debug.Log("boob");
+        }
+        Colorx.Slerp(GetComponent<Renderer>().material.color, cubeColor.ToColor(), colorChangeSpeed * Time.deltaTime);
+        //GetComponent<Renderer>().material.color = cubeColor.ToColor();
+
+    }
 
     void Jump()
     {
